@@ -1,0 +1,33 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{custom_macros}[2023/08/06 Custom Macros and Commands for Personal Notes]
+
+\RequirePackage{amsmath}
+\RequirePackage{amsthm}
+\RequirePackage{siunitx}
+
+\sisetup{range-phrase=-}
+
+\input{commands.tex}
+\input{theorems.tex}
+
+% Set typesetting parameters
+% Sets unit length to 1mm
+\setlength{\unitlength}{1mm}
+% Odd side margin
+\oddsidemargin=-4.5mm
+% Standard line width
+\textwidth=173mm
+% Standard line height
+\textheight=250mm
+% Top margin
+\topmargin=-20mm
+% Sets vertical space between paragraphs to 10 true point
+\parskip=10truept
+% Sets paragraph indentation to 0
+\parindent=0mm
+% Sets vertical spacing of footers
+\footskip=14pt
+% Sets height of headers
+\headheight=14pt
+
+\endinput
