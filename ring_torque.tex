@@ -1,0 +1,37 @@
+% Set search path to include custom package
+\makeatletter
+\def\input@path{{../../LaTeX Packages/custom_macros}}
+\makeatother
+
+% Document class
+\documentclass[11pt]{article}
+
+% Import packages
+\input{packages}
+\usepackage{custom_macros}
+
+\pagestyle{fancy}
+
+\begin{document}
+\vspace{-2cm}
+\begin{center}
+    \vspace{-3cm}
+    Pavadol Yamsiri \\
+    \vspace{2mm}
+    \horln{}
+    % Subject name
+    Torque of Concentric Elliptic Rings \\
+    \vspace{2mm}
+    \horln{}
+\end{center}
+\vspace{0.5mm}
+
+\input{potential}
+\newpage
+\input{torque}
+\newpage
+\input{equations_of_motion}
+\newpage
+\input{experimental_setup}
+
+\end{document}
